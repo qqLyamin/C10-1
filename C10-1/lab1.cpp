@@ -38,9 +38,9 @@ int nTwin = 2;
   //пространстве имен - TwinSpace
 
 #if defined(_MSC_VER)
-#define stop __asm nop
+	#define stop __asm nop
 #elif defined(__GNUC__)
-#define stop asm("nop");
+	#define stop asm("nop");
 #endif
 
 //с помощью макроподстановки задаем "пустую" команду. \
